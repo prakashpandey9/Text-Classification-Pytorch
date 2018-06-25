@@ -6,7 +6,7 @@ import torch.nn.functional as F
 from torch.autograd import Variable
 import torch.optim as optim
 import numpy as np
-from LSTM import LSTMClassifier
+from models.LSTM import LSTMClassifier
 
 TEXT, vocab_size, word_embeddings, train_iter, valid_iter, test_iter = load_data.load_dataset()
 

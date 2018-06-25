@@ -54,10 +54,10 @@ class AttentionModel(torch.nn.Module):
 				  new hidden state.
 				  
 		Tensor Size :
-					  hidden.size() = (batch_size, hidden_size)
-					  attn_weights.size() = (batch_size, num_seq)
-					  soft_attn_weights.size() = (batch_size, num_seq)
-					  new_hidden_state.size() = (batch_size, hidden_size)
+					hidden.size() = (batch_size, hidden_size)
+					attn_weights.size() = (batch_size, num_seq)
+					soft_attn_weights.size() = (batch_size, num_seq)
+					new_hidden_state.size() = (batch_size, hidden_size)
 					  
 		"""
 		
