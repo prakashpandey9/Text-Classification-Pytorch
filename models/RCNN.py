@@ -49,16 +49,16 @@ class RCNN(nn.Module):
 		
 		"""
 		
-        """
-        
-        The idea of the paper "Recurrent Convolutional Neural Networks for Text Classification" is that we pass the embedding vector
-        of the text sequences through a bidirectional LSTM and then for each sequence, our final embedding vector is the concatenation of 
-        its own GloVe embedding and the left and right contextual embedding which in bidirectional LSTM is same as the corresponding hidden
-        state. This final embedding is passed through a linear layer which maps this long concatenated encoding vector back to the hidden_size
-        vector. After this step, we use a max pooling layer across all sequences of texts. This converts any varying length text into a fixed
-        dimension tensor of size (batch_size, hidden_size) and finally we map this to the output layer.
+		"""
+		
+		The idea of the paper "Recurrent Convolutional Neural Networks for Text Classification" is that we pass the embedding vector
+		of the text sequences through a bidirectional LSTM and then for each sequence, our final embedding vector is the concatenation of 
+		its own GloVe embedding and the left and right contextual embedding which in bidirectional LSTM is same as the corresponding hidden
+		state. This final embedding is passed through a linear layer which maps this long concatenated encoding vector back to the hidden_size
+		vector. After this step, we use a max pooling layer across all sequences of texts. This converts any varying length text into a fixed
+		dimension tensor of size (batch_size, hidden_size) and finally we map this to the output layer.
 
-        """
+		"""
 		input = self.word_embeddings(input_sentence) # embedded input of shape = (batch_size, num_sequences, embedding_length)
 		input = input.permute(1, 0, 2) # input.size() = (num_sequences, batch_size, embedding_length)
 		if batch_size is None:
