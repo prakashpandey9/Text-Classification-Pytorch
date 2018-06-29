@@ -30,3 +30,6 @@ $ python main.py
 [1]:https://arxiv.org/pdf/1703.03130.pdf
 [2]:https://arxiv.org/pdf/1408.5882.pdf
 [3]:https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwiRxa37_PbbAhWOfSsKHW9bAtIQFggrMAA&url=https%3A%2F%2Fwww.aaai.org%2Focs%2Findex.php%2FAAAI%2FAAAI15%2Fpaper%2Fdownload%2F9745%2F9552&usg=AOvVaw37k05lV8569fo_aCghlO9i
+
+## License
+MIT
