@@ -19,13 +19,13 @@ Text Classification is one of the basic and most important task of Natural Langu
 ## Downloads and Setup
 Once you clone this repo, run the main.py file to process the dataset and to train the model.
 ```shell
-$ main.py
+$ python main.py
 ```
 
 ## References
-A Structured Self-Attentive Sentence Embedding : [Paper][1]
-Convolutional Neural Networks for Sentence Classification : [Paper][2]
-Recurrent Convolutional Neural Networks for Text Classification : [Paper][3]
+  * A Structured Self-Attentive Sentence Embedding : [Paper][1]
+  * Convolutional Neural Networks for Sentence Classification : [Paper][2]
+  * Recurrent Convolutional Neural Networks for Text Classification : [Paper][3]
 
 [1]:https://arxiv.org/pdf/1703.03130.pdf
 [2]:https://arxiv.org/pdf/1408.5882.pdf
